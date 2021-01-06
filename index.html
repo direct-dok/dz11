@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header">
+                    <p class="m-0">Генератор пользовательских данных</p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col gen-data">
+                            <div><span>Фамилия:</span> <span id="surnameOutput" class="clear">Иванов</span></div>
+                            <div><span>Имя:</span> <span id="firstNameOutput" class="clear">Иван</span></div>
+                            <div><span>Отчество:</span> <span id="patronymicOutput" class="clear">Иванович</span></div>
+                            <div><span>Пол:</span> <span id="genderOutput" class="clear">Мужской</span></div> 
+                            <div><span>Дата рождения:</span> <span id="birthYearOutput" class="clear">19 апреля 1987</span></div>
+                            <div><span>Профессия:</span> <span id="professionOutput" class="clear">Программист</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="generate-button-wrapper">
+                    <button class="generate-button">Генерировать</button>
+                    <button class="clear-button">Очистить данные</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="personGenerator.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
